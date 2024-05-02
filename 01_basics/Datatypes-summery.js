@@ -23,3 +23,30 @@ const myfunction = function() {
 }
 console.log(typeof anotherid); //to check the datatype 
  
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (primitive type), Heap(non-primitive)
+
+let myYoutubename = "aryandadhich"
+
+let anothername = myYoutubename
+anothername = "kuchkuch"
+console.log(myYoutubename);
+console.log(anothername);
+// we get a copy in stack of variabel 
+
+let userone = {
+     email : "aryu@gmail.com",
+     upi : "as@ybl",
+}
+
+let usertwo = userone
+usertwo.email = "gyan@gmail.com"
+
+console.log(userone.email);
+console.log(usertwo.email)
+
+// in heap we get a refrence like whatever we cahnge that cahnge will occur in original value
+
+
+
