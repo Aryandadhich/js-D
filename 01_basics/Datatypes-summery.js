@@ -48,5 +48,3 @@ console.log(usertwo.email)
 
 // in heap we get a refrence like whatever we cahnge that cahnge will occur in original value
 
-
-
