@@ -1,4 +1,4 @@
-const myArr = [10,20,30,40,50]
+const myArr = [0,1,2,3,4,5]
 
 //console.log(myArr[0]);
 
@@ -25,5 +25,10 @@ const myn1 = myArr.slice(1,3)
 console.log(myn1)
 console.log("B" , myArr);
 
-console.log("C", myArr);
 const myn2 = myArr.splice(1,3)
+console.log("C" , myArr);
+
+console.log(myn2)
+// The main difference between slice and splice is the array will be same in slice 
+//.. but in splice the original array will manupulate 
+//.. the given range value exclude from that array in Splice
