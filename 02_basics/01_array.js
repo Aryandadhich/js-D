@@ -6,3 +6,7 @@ const dc_hero = ["superman","baburao","ramu"]
 
 // const all_hero = marvel_heros.concat(dc_hero)
 // console.log(all_hero);
+
+const all_new_hero = [... marvel_heros, ...dc_hero]
+
+console.log(all_new_hero);
