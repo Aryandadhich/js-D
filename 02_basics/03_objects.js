@@ -28,10 +28,10 @@ Jsuser.greetings = function(){
     console.log("Hello Js user");
 
 }
+console.log(Jsuser.greetings);
 
 Jsuser.greetingtwo = function(){
     console.log(`Hello Js user, ${this.name}`);
 
 }
-console.log(Jsuser.greetings);
 console.log(Jsuser.greetingtwo());
