@@ -1,26 +1,34 @@
-const marvel_heros =["thor",'iron_man','spidy']
-const dc_hero = ["superman","baburao","ramu"]
+const myArr = [0,1,2,3,4,5]
 
-// marvel_heros.push(dc_hero)
-// console.log(marvel_heros[3][0]);
+//console.log(myArr[0]);
 
-// const all_hero = marvel_heros.concat(dc_hero)
-// console.log(all_hero);
+//Array methods
 
-const all_new_hero = [... marvel_heros, ...dc_hero]
+// myArr.push(6)
+// myArr.pop()// delete by default last value
+// console.log(myArr);
 
-//console.log(all_new_hero);
+// myArr.unshift(9) 
+// myArr.shift()
 
-const anotherarray = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
-const real_anotherarray = anotherarray.flat(Infinity)
-//console.log(real_anotherarray);
+// console.log(myArr.includes(9));
+// console.log(myArr.indexOf(20));
 
-console.log(Array.isArray("Aryan"));
-console.log(Array.from("Aryan"));
-console.log(Array.isArray({name:"Aryan"})); // give emptyy array becaue we havbe to keys or value 
+const newArr = myArr.join(); // convert in string and give comma seprated values 
+//console.log(newArr);
+//console.log(myArr);
 
-let score1 = 100
-let score2 = 200
-let score3 =  300
+//slice , splice
 
-console.log(Array.of(score1,score2,score3))
+console.log("A" , myArr);
+const myn1 = myArr.slice(1,3)
+console.log(myn1)
+console.log("B" , myArr);
+
+const myn2 = myArr.splice(1,3)
+console.log("C" , myArr);
+
+console.log(myn2)
+// The main difference between slice and splice is the array will be same in slice 
+//.. but in splice the original array will manupulate 
+//.. the given range value exclude from that array in Splice
