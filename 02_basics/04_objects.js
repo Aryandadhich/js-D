@@ -38,6 +38,6 @@ const course = {
 
 const {courseinstructor : insturctor} = course
 //console.log(courseinstructor);
-console.log(insturctor);
+console.log(insturctor)
 
  
