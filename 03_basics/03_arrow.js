@@ -47,7 +47,7 @@ const Tea = () =>
 //     }
 // console.log(addTwo(3,4))
 
-//implicit return in this we dont have to use the paranthesis.
+//implicit return - in this we dont have to use the paranthesis.
 
 //const addTwo = (num1 , num2) =>  num1 + num2;
 
