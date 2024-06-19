@@ -23,3 +23,15 @@ map.set('IND',"indonasia")
 for (const [Key , value] of map) {
     console.log(Key, ':-', value);
 }
+
+//object is not iteratabel 
+
+const myobj = {
+    'game1' : 'NFS',
+    'game2' : 'gta'
+}
+// for (const [key , value] of myobj) {
+//     console.log(key, ':-', value)
+    
+// }
+
