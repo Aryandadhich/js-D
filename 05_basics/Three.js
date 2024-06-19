@@ -11,3 +11,9 @@ const greetings = "Hello world"
 for (const greet of greetings) {
     console.log(`each char is ${greet}`)
 }
+
+//Maps 
+
+const map = new map()
+map.set('IN',"india")
+map.set('IND',"indonasia")
