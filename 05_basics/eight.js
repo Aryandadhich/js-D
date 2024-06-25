@@ -12,5 +12,6 @@ const mytotal = mynums.reduce( (acc , currval) => acc+currval , 0)
 console.log(mytotal);
 
 const shopingcart = [
-    
+    itemname = "js courae",
+    price : 999
 ]
