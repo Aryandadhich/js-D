@@ -13,5 +13,5 @@ console.log(mytotal);
 
 const shopingcart = [
     itemname = "js courae",
-    price : 999
-]
+    price : 999, 
+],
