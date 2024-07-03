@@ -12,6 +12,8 @@
 </body>
 
 <script>
+
+//in this the whole node will traverse so we cant use this method
     function addLanguage(langname){
         const li =  document.createElement('li'); // li = list item
         li.innerHTML = `${langname}`
@@ -19,5 +21,15 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+
+// we are doing same above work in optimize way  so 
+//that we dont need to traverse whole this list 
+    function addOptiLanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)        
+
+    }
+    addLanguage('golang')
 </script>
 </html>
