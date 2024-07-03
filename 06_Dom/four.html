@@ -31,5 +31,27 @@
 
     }
     addLanguage('golang')
+
+//Note - use appenchild insted of innerhtml...
+
+
+//EDIT
+
+const secondlang = document.querySelector("li:nth-child(2)")
+//secondlang.innerHTML = "Mojo" //in this again we have to traverse the whole node 
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+secondlang.replaceWith(newli)
+
+//EDIT
+const firstlang = document.querySelector("li:first-child")
+firstlang.outerHTML = '<li>Typescript</li>'
+
+// text content or innerhtml both are not a optimised way 
+
+//REMOVE 
+
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove()
 </script>
 </html>
