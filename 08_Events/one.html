@@ -7,14 +7,79 @@
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
+    <!-- we can use this in html onclick="alert('soft lather')" after alt tag but its not a scalable method 
+     so we use javascript but in react that can work on like button because that is scalabel -->
     <div >
         <ul id="images">
             <li><img width="200px" id="photoshop" src="https://media.istockphoto.com/id/2073120208/photo/crm-customer-relationship-management-concept-global-business-customer-network-technology-data.jpg?s=1024x1024&w=is&k=20&c=MAa7yW_Z3jr04x0r8GNadgA69aJ4VCyOZ3hGa6HWf18=" alt="photoshop"></li>
-            <li><img width="200px" id="japan" src="https://images.freeimages.com/images/large-previews/53d/leather-link-texture-1538412.jpg?fmt=webp&h=350" alt=""></li>
-            <li><img width="200px" id="river" src="https://images.freeimages.com/images/large-previews/53d/leather-link-texture-1538412.jpg?fmt=webp&h=350" alt=""></li>
-            <li><img width="200px" id="owl" src="https://images.freeimages.com/images/large-previews/53d/leather-link-texture-1538412.jpg?fmt=webp&h=350" alt="" ></li>
+            <li><img width="200px" id="lather" src="https://images.freeimages.com/images/large-previews/53d/leather-link-texture-1538412.jpg?fmt=webp&h=350" alt="" ></li>
             <li><img width="200px" id="prayer" src="https://images.freeimages.com/images/large-previews/f2e/texture-1171413.jpg" alt=""></li>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
    </div>
 </body>
+<script>
+    //this approach will give less feature so we use another one 
+
+// document.getElementById('lather').onclick = function()
+// {
+//     alert("soft lather")
+// }
+
+// document.getElementById('lather').addEventListener('click',function(e){
+
+//     console.log(e);
+
+    
+// },false)
+//Self study - type , timestamp , defaultPrevented
+//target, toElement , secElement , Currenttarget
+// clientX , client Y , screen X , screen Y (interview questions)
+//altkey , ctrlkey , shiftkey , keycode
+
+
+// capturing -- top to bottom approch 
+//bubbling -- bottom to top approach 
+// stop propogation -- in this event will stop on the first click and not go to upside
+
+
+// document.getElementById('images').addEventListener('click',function(e){
+
+// console.log("clicked by the ul");
+
+
+// },false)
+
+// document.getElementById('lather').addEventListener('click',function(e){
+
+// console.log("soft lather");
+// e.stopPropagation()
+// },false)
+
+// document.getElementById('google').addEventListener
+// ('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("google clicked");
+ 
+// }, false)
+
+
+// this false sometimes necessary for some project and by
+// default its false so if we dont write then also it will be ok 
+
+// # for id && .for class
+document.querySelector('#images').addEventListener('click',function(e)
+{
+    console.log(e.target.tagName);
+    if (e.target.tagName == 'IMG'){
+        console.log(e.target)
+        let removeit = e.target.parentNode
+    removeit.remove() 
+    }
+   // we can use this also ----- removeit.parentNode.removeChild(removeit)
+   
+},false)
+</script>
+
+</html>
