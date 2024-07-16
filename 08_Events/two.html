@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: black; color: white;">
     <h1>Async & await</h1>
-    <button id=""stop>Stop</button>
+    <button id="stop">Stop</button>
     
 </body>
 
@@ -18,8 +18,14 @@
     const chnageText = function(){
         document.querySelector('h1').innerHTML="best Js series"
     }
-    setTimeout(chnageText, 2000)
-    
 
+
+    const changeme =  setTimeout(chnageText, 3000)
+//we use # for button
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("Stopped")
+    })
+    
 </Script>
 </html>
