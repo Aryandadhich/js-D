@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Closure</title>
+  <title style="color: #454345;">Closure</title>
 </head>
-<body>
-  
+
+<body style="background-color: #313131;">
+       <button id="orange">orange</button>
+       <button id="green">green</button>
+
 </body>
+<script>
+  //lexical scoping 
+  // function init() {
+  //   let name = "Mozilla";
+  //   function displayName() {
+  //     console.log(name);
+  //   }
+  //   displayName();
+  // }
+  // init();
+
+  // document.getElementById("orange").onclick = function()
+  // {
+  //   document.body.style.backgroundColor = `orange`
+  // }
+  // document.getElementById("green").onclick = function()
+  // {
+  //   document.body.style.backgroundColor = `lightgreen`
+  // }
+
+  function clickhandler(color){
+      //  document.body.style.backgroundColor = `${color}`
+      return function(){
+        document.body.style.backgroundColor = `${color}`
+      }
+  }
+
+  document.getElementById('orange').onclick = clickhandler
+  ("orange")
+  document.getElementById('green').onclick = clickhandler
+  ("green")
+</script>
+
 </html>
